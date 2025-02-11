@@ -24,5 +24,9 @@ go install -v github.com/hakluke/hakrawler@latest
 go install -v github.com/tomnomnom/waybackurls@latest
 go install -v github.com/projectdiscovery/katana/cmd/katana@latest
 
+echo "Moving script to /usr/local/bin/..."
+sudo mv reconblitz.sh /usr/local/bin/reconblitz
+sudo chmod +x /usr/local/bin/reconblitz
+
 echo "Installation completed!"
 echo "To start using ReconBlitz, run: ./reconblitz.sh <domain>"
